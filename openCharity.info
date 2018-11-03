@@ -1,0 +1,12 @@
+name = OpenCharity
+description = Basic theme developed for Open Charity.
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = assets/css/styles.css
+
+regions[header] = Header
+regions[home] = Home Section
+regions[content] = Content
+regions[footer] = Footer
