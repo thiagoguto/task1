@@ -1,20 +1,22 @@
-html, body {
+html, body, div, ul {
   margin: 0;
   padding: 0;
   display: block; }
 
-.container {
+.region h2 {
+  text-align: center; }
+
+.container, .region {
   width: 100%;
   margin: 0 auto; }
 
-.container:after, .row:after {
+.container:after, .row:after, .region:after {
   content: "";
   display: table;
   clear: both; }
 
 [class*='col-'] {
   float: left;
-  padding: 0.85em;
   width: 100%;
   min-height: 2px;
   display: inline-block; }
@@ -163,3 +165,35 @@ html, body {
     width: 91.66667%; }
   .col-xl-12 {
     width: 100%; } }
+
+.logo a, .logo img {
+  float: left;
+  width: 100%; }
+
+.navbar-right ul {
+  float: right;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none; }
+
+.hero-container {
+  overflow: hidden;
+  height: auto;
+  max-height: 500px;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto; }
+
+.hero {
+  margin: 30px auto;
+  width: 85%; }
+
+.brand-members {
+  position: relative;
+  float: left;
+  width: 20%; }
