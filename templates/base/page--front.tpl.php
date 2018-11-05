@@ -1,6 +1,5 @@
 <header class="navbar">
-    <div class="container">
-        <nav class="row">
+        <nav class="container row">
             <?php if ($logo): ?>
             <div class="col-2-3-xs col-2-3-s col-1-3-m col-2-6-l col-2-6 logo">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -40,7 +39,6 @@
             </div>
             <?php endif; ?>
         </nav>
-    </div>
 </header>
 <?php if ($front_page): ?>
 <?php print render($page['hero']); ?>
