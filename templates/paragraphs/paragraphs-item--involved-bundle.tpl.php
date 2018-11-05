@@ -1,4 +1,4 @@
-<div class="col-l-4">
+<div class="col-1-1-s col-1-3-m col-1-3-l col-1-3">
     <div class='brand'>
         <?php print render($content['field_brand']); ?>
     </div>
