@@ -40,10 +40,28 @@
             <?php endif; ?>
         </nav>
 </header>
-<?php if ($front_page): ?>
+<?php if ($is_front): ?>
 <?php print render($page['hero']); ?>
 <?php print render($page['home']); ?>
-<?php endif; ?>
-<?php print render($page['header']); ?>
 <?php print render($page['content']);  ?>
+<?php else: ?>
+<div class='main'>
+<div class='container row'>
+    <?php print render($title_prefix); ?>
+    <?php if ($title): ?>
+    <h1 class="title" id="page-title">
+        <?php print $title; ?>
+    </h1>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+    <?php if ($tabs): ?>
+    <div class="col-1-1">
+        <?php print render($tabs); ?>
+    </div>
+    <?php endif; ?>
+    <?php print render($page['help']); ?>
+<?php print render($page['content']);  ?>
+</div>
+</div>
+<?php endif; ?>
 <?php print render($page['footer']); ?>
